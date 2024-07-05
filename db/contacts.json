@@ -1,20 +1,20 @@
-const contacts = require('./contacts');
-
-async function main() {
-  console.log('List of contacts:');
-  console.log(await contacts.listContacts());
-
-  console.log('Get contact by ID:');
-  console.log(await contacts.getContactById(1));
-
-  console.log('Add new contact:');
-  console.log(await contacts.addContact('Alice Smith', 'alice.smith@example.com', '111-222-3333'));
-
-  console.log('Remove contact:');
-  console.log(await contacts.removeContact(1));
-
-  console.log('Updated list of contacts:');
-  console.log(await contacts.listContacts());
-}
-
-main();
+[
+  {
+    "id": "1",
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "phone": "123-456-7890"
+  },
+  {
+    "id": "2",
+    "name": "Jane Doe",
+    "email": "jane.doe@example.com",
+    "phone": "098-765-4321"
+  },
+  {
+    "id": "3",
+    "name": "Alice Smith",
+    "email": "alice.smith@example.com",
+    "phone": "111-222-3333"
+  }
+]
